@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>codeforce 4a watermelon （模拟水题）no.3 | Gilgamesh</title>
+  <title>codeforce 534b covered path （贪心）no.4 | Gilgamesh</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
-  <meta name="description" content="Watermelon传送One hot summer day Pete and his friend Billy decided to buy a watermelon. They chose the biggest and the ripest one, in their opinion. After that the watermelon was weighed, and the scales">
+  <meta name="description" content="Covered Path传送The on-board computer on Polycarp’s car measured that the car speed at the beginning of some section of the path equals v1 meters per second, and in the end it is v2 meters per second. W">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Codeforce 4A Watermelon （模拟水题）No.3">
-<meta property="og:url" content="http://yoursite.com/2018/08/23/03_4A/index.html">
+<meta property="og:title" content="Codeforce 534B Covered Path （贪心）No.4">
+<meta property="og:url" content="http://yoursite.com/2018/08/26/04_534B/index.html">
 <meta property="og:site_name" content="Gilgamesh">
-<meta property="og:description" content="Watermelon传送One hot summer day Pete and his friend Billy decided to buy a watermelon. They chose the biggest and the ripest one, in their opinion. After that the watermelon was weighed, and the scales">
+<meta property="og:description" content="Covered Path传送The on-board computer on Polycarp’s car measured that the car speed at the beginning of some section of the path equals v1 meters per second, and in the end it is v2 meters per second. W">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-26T10:30:59.132Z">
+<meta property="og:updated_time" content="2018-08-26T10:30:23.508Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Codeforce 4A Watermelon （模拟水题）No.3">
-<meta name="twitter:description" content="Watermelon传送One hot summer day Pete and his friend Billy decided to buy a watermelon. They chose the biggest and the ripest one, in their opinion. After that the watermelon was weighed, and the scales">
+<meta name="twitter:title" content="Codeforce 534B Covered Path （贪心）No.4">
+<meta name="twitter:description" content="Covered Path传送The on-board computer on Polycarp’s car measured that the car speed at the beginning of some section of the path equals v1 meters per second, and in the end it is v2 meters per second. W">
   
     <link rel="alternate" href="/atom.xml" title="Gilgamesh" type="application/atom+xml">
   
@@ -159,7 +159,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-03_4A" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-04_534B" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
@@ -167,7 +167,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      Codeforce 4A Watermelon （模拟水题）No.3
+      Codeforce 534B Covered Path （贪心）No.4
     </h1>
   
 
@@ -175,8 +175,8 @@
     
     <div class="article-meta">
       
-	<a href="/2018/08/23/03_4A/" class="article-date">
-	  <time datetime="2018-08-22T16:29:58.918Z" itemprop="datePublished">2018-08-23</time>
+	<a href="/2018/08/26/04_534B/" class="article-date">
+	  <time datetime="2018-08-26T10:26:43.054Z" itemprop="datePublished">2018-08-26</time>
 	</a>
 
       
@@ -190,24 +190,35 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Watermelon"><a href="#Watermelon" class="headerlink" title="Watermelon"></a>Watermelon</h2><p><a href="http://codeforces.com/problemset/problem/4/A" target="_blank" rel="noopener">传送</a><br>One hot summer day Pete and his friend Billy decided to buy a watermelon. They chose the biggest and the ripest one, in their opinion. After that the watermelon was weighed, and the scales showed w kilos. They rushed home, dying of thirst, and decided to divide the berry, however they faced a hard problem.</p>
-<p>Pete and Billy are great fans of even numbers, that’s why they want to divide the watermelon in such a way that each of the two parts weighs even number of kilos, at the same time it is not obligatory that the parts are equal. The boys are extremely tired and want to start their meal as soon as possible, that’s why you should help them and find out, if they can divide the watermelon in the way they want. For sure, each of them should get a part of positive weight.</p>
-<h4 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h4><p>The first (and the only) input line contains integer number w (1 ≤ w ≤ 100) — the weight of the watermelon bought by the boys.</p>
-<h4 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h4><p>Print YES, if the boys can divide the watermelon into two parts, each of them weighing even number of kilos; and NO in the opposite case.</p>
-<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p><strong>input</strong></p>
+        <h2 id="Covered-Path"><a href="#Covered-Path" class="headerlink" title="Covered Path"></a>Covered Path</h2><p><a href="http://codeforces.com/problemset/problem/534/B" target="_blank" rel="noopener">传送</a><br>The on-board computer on Polycarp’s car measured that the car speed at the beginning of some section of the path equals v1 meters per second, and in the end it is v2 meters per second. We know that this section of the route took exactly t seconds to pass.</p>
+<p>Assuming that at each of the seconds the speed is constant, and between seconds the speed can change at most by d meters per second in absolute value (i.e., the difference in the speed of any two adjacent seconds does not exceed d in absolute value), find the maximum possible length of the path section in meters.</p>
+<h4 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h4><p>The first line contains two integers v1 and v2 (1 ≤ v1, v2 ≤ 100) — the speeds in meters per second at the beginning of the segment and at the end of the segment, respectively.</p>
+<p>The second line contains two integers t (2 ≤ t ≤ 100) — the time when the car moves along the segment in seconds, d (0 ≤ d ≤ 10) — the maximum value of the speed change between adjacent seconds.</p>
+<p>It is guaranteed that there is a way to complete the segment so that:</p>
+<p>the speed in the first second equals v1,<br>the speed in the last second equals v2,<br>the absolute value of difference of speeds between any two adjacent seconds doesn’t exceed d.</p>
+<h4 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h4><p>Print the maximum possible length of the path segment in meters.</p>
+<h4 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h4><p><strong>input</strong></p>
 <blockquote>
-<p>8</p>
+<p>5 6<br>4 2</p>
 </blockquote>
 <p><strong>output</strong></p>
 <blockquote>
-<p>YES</p>
+<p>26</p>
 </blockquote>
-<h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><p>For example, the boys can divide the watermelon into two parts of 2 and 6 kilos respectively (another variant — two parts of 4 and 4 kilos).</p>
+<p><strong>input</strong></p>
+<blockquote>
+<p>10 10<br> 10 0</p>
+</blockquote>
+<p><strong>output</strong></p>
+<blockquote>
+<p>100</p>
+</blockquote>
+<h4 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h4><p>In the first sample the sequence of speeds of Polycarpus’ car can look as follows: 5, 7, 8, 6. Thus, the total path is 5 + 7 + 8 + 6 = 26 meters.</p>
+<p>In the second sample, as d = 0, the car covers the whole segment at constant speed v = 10. In t = 10 seconds it covers the distance of 100 meters.</p>
 <hr>
-<h2 id="题目大意："><a href="#题目大意：" class="headerlink" title="题目大意："></a>题目大意：</h2><p>给出一个数n 询问其是否能拆成两个偶数之和<br><del>一开始理解错题意了</del></p>
-<h2 id="做法："><a href="#做法：" class="headerlink" title="做法："></a>做法：</h2><p>偶数=偶数+偶数 （2需要特判）</p>
-<p>ps：要好好学英语呀！</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> res=<span class="number">0</span>,w=<span class="number">1</span>;<span class="keyword">char</span> ch=getchar();</span><br><span class="line">	<span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch)&amp;&amp;ch!=<span class="string">'-'</span>) ch=getchar();</span><br><span class="line">	<span class="keyword">if</span>(ch==<span class="string">'-'</span>) w=<span class="number">-1</span>,ch=getchar();</span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch)) res=res*<span class="number">10</span>+ch-<span class="string">'0'</span>,ch=getchar();</span><br><span class="line">	<span class="keyword">return</span> res*w; </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	n=read();</span><br><span class="line">	<span class="keyword">if</span>(n!=<span class="number">2</span>&amp;&amp;n%<span class="number">2</span>==<span class="number">0</span>) <span class="built_in">printf</span>(<span class="string">"YES\n"</span>);</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">"NO\n"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="题目大意："><a href="#题目大意：" class="headerlink" title="题目大意："></a>题目大意：</h2><p>初速度v1 末速度v2 一共t秒 速度每秒能改变[-d,+d]（注意是瞬间改变速度，牛顿的棺材板要压不住了）问最远距离</p>
+<h2 id="做法："><a href="#做法：" class="headerlink" title="做法："></a>做法：</h2><p>先一个劲的加速 加速的时候要注意能不能回到v2</p>
+<h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> v1,v2,t,d,ans;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> res=<span class="number">0</span>,w=<span class="number">1</span>;<span class="keyword">char</span> ch=getchar();</span><br><span class="line">	<span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch)&amp;&amp;ch!=<span class="string">'-'</span>) ch=getchar();</span><br><span class="line">	<span class="keyword">if</span>(ch==<span class="string">'-'</span>) w=<span class="number">-1</span>,ch=getchar();</span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch)) res=res*<span class="number">10</span>+ch-<span class="string">'0'</span>,ch=getchar();</span><br><span class="line">	<span class="keyword">return</span> res*w; </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	v1=read();</span><br><span class="line">	v2=read();</span><br><span class="line">	t=read();</span><br><span class="line">	d=read();</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=t<span class="number">-1</span>;i++)&#123;</span><br><span class="line">		ans+=min(v1+i*d,v2+(t-i<span class="number">-1</span>)*d);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
@@ -233,7 +244,7 @@ var a = new Donate({
           </li>
           <li class="post-copyright-link">
           <strong>Post link:  </strong>
-          <a href="/2018/08/23/03_4A/" target="_blank" title="Codeforce 4A Watermelon （模拟水题）No.3">http://yoursite.com/2018/08/23/03_4A/</a>
+          <a href="/2018/08/26/04_534B/" target="_blank" title="Codeforce 534B Covered Path （贪心）No.4">http://yoursite.com/2018/08/26/04_534B/</a>
           </li>
           <li class="post-copyright-license">
             <strong>Copyright Notice:   </strong>
@@ -279,19 +290,19 @@ var a = new Donate({
     
 <nav id="article-nav">
   
-    <a href="/2018/08/26/04_534B/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/08/26/05_535B/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Codeforce 534B Covered Path （贪心）No.4
+          Codeforce 535B Tavas and SaDDas (打表） No.5
         
       </div>
     </a>
   
   
-    <a href="/2018/08/22/02_118A/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/08/23/03_4A/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Codeforce 118A String Task （字符串）No.2</div>
+      <div class="article-nav-title">Codeforce 4A Watermelon （模拟水题）No.3</div>
     </a>
   
 </nav>
@@ -305,7 +316,7 @@ var a = new Donate({
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Watermelon"><span class="nav-number">1.</span> <span class="nav-text">Watermelon</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Input"><span class="nav-number">1.0.1.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Output"><span class="nav-number">1.0.2.</span> <span class="nav-text">Output</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Examples"><span class="nav-number">1.1.</span> <span class="nav-text">Examples</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Note"><span class="nav-number">1.2.</span> <span class="nav-text">Note</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目大意："><span class="nav-number">2.</span> <span class="nav-text">题目大意：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#做法："><span class="nav-number">3.</span> <span class="nav-text">做法：</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Covered-Path"><span class="nav-number">1.</span> <span class="nav-text">Covered Path</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Input"><span class="nav-number">1.0.1.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Output"><span class="nav-number">1.0.2.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Examples"><span class="nav-number">1.0.3.</span> <span class="nav-text">Examples</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Note"><span class="nav-number">1.0.4.</span> <span class="nav-text">Note</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目大意："><span class="nav-number">2.</span> <span class="nav-text">题目大意：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#做法："><span class="nav-number">3.</span> <span class="nav-text">做法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码："><span class="nav-number">4.</span> <span class="nav-text">代码：</span></a></li></ol>
     
     </div>
   </aside>
