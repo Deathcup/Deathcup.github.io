@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Gilgamesh">
 <meta property="og:description" content="Theatre Square传送Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city’s anniversary, a decision was taken to pave the Square wit">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-29T14:27:57.827Z">
+<meta property="og:updated_time" content="2018-08-29T15:37:13.120Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Codeforce 1A Theatre Square （每日一水练读题练手速）No.8">
 <meta name="twitter:description" content="Theatre Square传送Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city’s anniversary, a decision was taken to pave the Square wit">
@@ -194,9 +194,16 @@
 <p>What is the least number of flagstones needed to pave the Square? It’s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered. It’s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.</p>
 <h4 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h4><p>The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 109).</p>
 <h4 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h4><p>Write the needed number of flagstones.</p>
-<h4 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h4><p><strong>input</strong><br>6 6 4<br><strong>output</strong><br>4</p>
+<h4 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h4><p><strong>input</strong></p>
+<blockquote>
+<p>6 6 4</p>
+</blockquote>
+<p><strong>output</strong></p>
+<blockquote>
+<p>4</p>
+</blockquote>
 <hr>
-<h2 id="题目大意："><a href="#题目大意：" class="headerlink" title="题目大意："></a>题目大意：</h2><p>n<em>m 的矩阵能由几个a</em>a的矩阵覆盖</p>
+<h2 id="题目大意："><a href="#题目大意：" class="headerlink" title="题目大意："></a>题目大意：</h2><p>n×m的矩阵能由几个a×a的矩阵覆盖</p>
 <h2 id="做法："><a href="#做法：" class="headerlink" title="做法："></a>做法：</h2><p>长和宽都覆盖就可以了<br>ans=覆盖长需要的个数*覆盖宽需要的个数</p>
 <h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> n,m,p,a,b,ans;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m&gt;&gt;p)&#123;</span><br><span class="line">		<span class="keyword">if</span>(n%p==<span class="number">0</span>) a=n/p;</span><br><span class="line">		<span class="keyword">else</span> a=(n/p)+<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(m%p==<span class="number">0</span>) b=m/p;</span><br><span class="line">		<span class="keyword">else</span> b=(m/p)+<span class="number">1</span>;</span><br><span class="line">		ans=a*b;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
